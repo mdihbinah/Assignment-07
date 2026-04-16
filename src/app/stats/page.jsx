@@ -40,6 +40,7 @@ const Stats = () => {
                                 }
                             </Pie>
                             <Tooltip />
+                            <Legend />
                         </PieChart>
                     </ResponsiveContainer>
                 </div>
