@@ -17,7 +17,7 @@ const TimelineCard = ({data}) => {
                         {x==1? <MdAddIcCall />: x==2? <MdOutlineTextsms />: <FaVideo />}
                     </div>
                     <div className="">
-                        <h1><span className='font-bold text-xl'>Text</span> with {friend.name}</h1>
+                        <h1><span className='font-bold text-xl'>{x==1? 'Call': x==2? 'Text': 'Video'}</span> with {friend.name}</h1>
                         <div className="">{<DateC date={date} ></DateC>}</div>
                     </div>
                 </div>

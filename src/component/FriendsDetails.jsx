@@ -8,6 +8,7 @@ import { RiNotificationSnoozeLine } from 'react-icons/ri';
 import DateC from '@/component/Date';
 import { useContext } from 'react';
 import { UserContext } from '@/contextApi/UserContext';
+import { toast } from 'react-toastify';
 
 
 const FriendsDetails = ({friend}) => {
@@ -62,15 +63,24 @@ const FriendsDetails = ({friend}) => {
                 <div className="flex flex-col justify-between space-y-3">
                     <p>Quick Check-In</p>
                     <div className="grid grid-cols-3 gap-3">
-                        <div onClick={() => {setUser([...user, [1,friend]])}} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                        <div onClick={() => {
+                            setUser([...user, [1,friend]])
+                            toast.success(`Call with ${name}`)
+                            }} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
                             <MdAddIcCall />
                             <p>Call</p>
                         </div>
-                        <div onClick={() => {setUser([...user, [2,friend]])}} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                        <div onClick={() => {
+                            setUser([...user, [2,friend]])
+                            toast.success(`Text with ${name}`)
+                            }} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
                             <MdOutlineTextsms />
                             <p>Text</p>
                         </div>
-                        <div onClick={() => {setUser([...user, [3,friend]])}} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                        <div onClick={() => {
+                            setUser([...user, [3,friend]]) 
+                            toast.success(`Video with ${name}`)}
+                            } className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
                             <FaVideo />
                             <p>Video</p>
                         </div>
