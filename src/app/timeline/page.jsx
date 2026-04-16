@@ -13,7 +13,7 @@ const TimeLine = () => {
      const handleFilter = (x) => {
         const filtered = user.filter(ele => ele[0] == x)
         setFilterData(filtered)
-        console.log(filterData);
+        // console.log(filterData);
      }
 
     return (
@@ -30,7 +30,7 @@ const TimeLine = () => {
                 </ul>
                 </div>
             </div>
-            <div className={`bg-gray-700 flex flex-col justify-center items-center gap-3 p-10 my-5 rounded-md md:rounded-2xl text-xl text-center md:text-4xl ${filterData.length == 0? '': 'hidden'}`}>
+            <div className={`bg-gray-800 flex flex-col justify-center items-center gap-3 p-10 my-5 rounded-md md:rounded-2xl text-xl text-center md:text-4xl ${filterData.length == 0? '': 'hidden'}`}>
                     <BiFileBlank className="lg:text-8xl" />
                     There are no information.
                 </div>

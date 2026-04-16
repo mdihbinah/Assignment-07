@@ -12,7 +12,7 @@ const TimelineCard = ({data}) => {
     return (
         <div>
             <div className="">
-                <div className="flex gap-10 bg-gray-700 p-3 mt-5 rounded-md">
+                <div className="flex gap-10 bg-gray-800 p-3 mt-5 rounded-md">
                     <div className="text-3xl md:text-5xl flex justify-center items-center">
                         {x==1? <MdAddIcCall />: x==2? <MdOutlineTextsms />: <FaVideo />}
                     </div>
