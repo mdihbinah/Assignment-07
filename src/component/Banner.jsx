@@ -17,15 +17,15 @@ relationships that matter most.</p>
                     <p>Total Friends</p>
                 </div>
                 <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
-                    <h1>10</h1>
+                    <h1>9</h1>
                     <p>On Track</p>
                 </div>
                 <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
-                    <h1>10</h1>
+                    <h1>6</h1>
                     <p>Need Attention</p>
                 </div>
                 <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
-                    <h1>10</h1>
+                    <h1>9</h1>
                     <p>Interactions This Month</p>
                 </div>
             </div>
