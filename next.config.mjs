@@ -10,10 +10,6 @@ const nextConfig = {
       },
     ],
   },
-  images: {
-    unoptimized: true, // important for Netlify in many cases
-  },
-};
 };
 
 export default nextConfig;
