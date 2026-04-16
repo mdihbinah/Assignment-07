@@ -1,3 +1,5 @@
+import Banner from "@/component/Banner";
+import Friends from "@/component/Friends";
 import Navbar from "@/component/Navbar";
 import Image from "next/image";
 
@@ -63,8 +65,9 @@ export default function Home() {
     //   </main>
     // </div>
 
-    <div>
-      Home
+    <div className="w-[90%] m-auto">
+      <Banner></Banner>
+      <Friends></Friends>
     </div>
   );
 }

@@ -18,7 +18,7 @@ const Navbar = () => {
         <div>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
-    <a className="btn btn-ghost text-xl"><span className="font-bold text-2xl">Keen</span><span className="opacity-80">Keeper</span> </a>
+    <Link href='/' className="btn btn-ghost text-xl"><span className="font-bold text-2xl">Keen</span><span className="opacity-80">Keeper</span> </Link>
   </div>
   <div className="navbar-end">
     <ul className="menu menu-horizontal hidden md:flex gap-3 px-1 mr-3">

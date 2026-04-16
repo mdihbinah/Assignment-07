@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="flex flex-col justify-center items-center gap-2">
                     <h1 className='text-3xl
                     '>KeenKeeper</h1>
-                    <p className={`${text.text} text-xs`} >Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                    <p className={`${text.text} text-xs text-center`} >Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     <div className="flex flex-col items-center">
                         <h3>Social Links</h3>
                         <ul className='flex gap-2 mt-1'>
@@ -20,9 +20,9 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={`${text.text} flex justify-between gap-5 text-xs w-full`}>
+                <div className={`${text.text} flex justify-between items-center gap-5 text-xs w-full`}>
                     <p>© 2026 KeenKeeper. All rights reserved.</p>
-                    <div className="flex gap-3">
+                    <div className="md:flex md:gap-3 space-y-2">
                         <p>Privacy Policy</p>
                         <p> Terms of Service </p>
                         <p>Cookies</p>

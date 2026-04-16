@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied Computer Science together at university. Still discuss coding and tech trends regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "Childhood best friend. We grew up together and still share life updates and emotional support.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Work colleague in a remote dev team. We collaborate on React and Next.js projects frequently.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Sadia Karim",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "sadia.karim@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["family", "cousin"],
+    "bio": "My cousin from Dhaka. We used to meet at every family gathering but now talk less often.",
+    "goal": 15,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "tanvir.ahmed@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "fitness buddy"],
+    "bio": "Gym friend who motivates me to stay consistent with workouts and healthy routines.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 6,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["freelance", "client"],
+    "bio": "A regular UI/UX design client. We maintain smooth professional communication for projects.",
+    "goal": 7,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 7,
+    "name": "Mahmudul Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "mahmudul.hasan@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["school", "friend"],
+    "bio": "Schoolmate from secondary school. We occasionally meet and talk about career growth and life updates.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 8,
+    "name": "Rafiq Uddin",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "rafiq.uddin@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["college", "roommate"],
+    "bio": "College roommate during university days. Shared a lot of memories and late-night study sessions.",
+    "goal": 14,
+    "next_due_date": "2026-04-09"
+  },
+  {
+    "id": 9,
+    "name": "Mehedi Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["startup", "business friend"],
+    "bio": "Startup enthusiast friend. We exchange ideas about business, SaaS products, and tech startups.",
+    "goal": 10,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 10,
+    "name": "Shakila Begum",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "shakila.begum@gmail.com",
+    "days_since_contact": 14,
+    "status": "almost due",
+    "tags": ["family", "aunt"],
+    "bio": "My caring aunt who always checks on family members. We try to stay in touch regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  }
+]
