@@ -3,7 +3,7 @@ import Friend from "./Friend";
 const Friends = async () => {
     const res = await fetch("/friends.json", {cache: "no-store"});
     const friends = await res.json()
-    // console.log(friends);
+    console.log(friends);
     return (
         <div className="space-y-3 mb-5">
             <h2>Your Friends</h2>

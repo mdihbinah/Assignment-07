@@ -13,7 +13,7 @@ import { toast } from 'react-toastify';
 
 const FriendsDetails = ({friend}) => {
     const {user, setUser} = useContext(UserContext)
-    console.log(user);
+    // console.log(user);
     const {id, email, name, picture, bio,tags,status,next_due_date,goal,days_since_contact} = friend
 
     return (
