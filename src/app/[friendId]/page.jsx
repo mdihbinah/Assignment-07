@@ -6,7 +6,7 @@ import React from 'react';
 
 const page = async({params}) => {
     const {friendId} = await params
-    const res = await fetch("/friends.json", {cache: "no-store"})
+    const res = await fetch("https://assignment-code.mdihbinah.workers.dev/friends.json", {cache: "no-store"})
     const friends = await res.json()
     console.log(friends);
     const friend = friends.find(friend => friend.id == friendId)

@@ -1,7 +1,7 @@
 import Friend from "./Friend";
 
 const Friends = async () => {
-    const res = await fetch("/friends.json", {cache: "no-store"});
+    const res = await fetch("https://assignment-code.mdihbinah.workers.dev/friends.json", {cache: "no-store"});
     const friends = await res.json()
     console.log(friends);
     return (
