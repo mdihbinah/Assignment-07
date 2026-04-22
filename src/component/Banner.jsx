@@ -12,20 +12,20 @@ relationships that matter most.</p>
                 <button className='btn btn-success text-white'><IoMdAdd />Add a Friend</button>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4">
-                <div className="border-2 border-accent lg:w-50 p-4 m-2 text-center rounded-xl">
+                <div className="bg-gray-700 lg:w-50 p-4 m-2 text-center rounded-md">
                     <h1>10</h1>
                     <p>Total Friends</p>
                 </div>
-                <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
+                <div className="bg-gray-700 lg:w-50 p-4 m-2 text-center rounded-md">
                     <h1>9</h1>
                     <p>On Track</p>
                 </div>
-                <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
+                <div className="bg-gray-700 lg:w-50 p-4 m-2 text-center rounded-md">
                     <h1>6</h1>
                     <p>Need Attention</p>
                 </div>
-                <div className="border-2 border-accent lg:w-50  p-4 m-2 text-center rounded-xl">
-                    <h1>9</h1>
+                <div className="bg-gray-700 lg:w-50 p-4 m-2 text-center rounded-md">
+                    <h1>9 </h1>
                     <p>Interactions This Month</p>
                 </div>
             </div>

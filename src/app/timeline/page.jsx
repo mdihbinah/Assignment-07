@@ -23,14 +23,14 @@ const TimeLine = () => {
                 <div className="dropdown dropdown-center">
                 <div tabIndex={0} role="button" className="btn m-1">Filter timeline  <FaAngleDown /> 
                 </div>
-                <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm space-y-2">
-                    <li onClick={() => handleFilter(1)} className="border border-accent"><a>Call</a></li>
-                    <li onClick={() => handleFilter(2)} className="border border-accent"><a>Text</a></li>
-                    <li onClick={() => handleFilter(3)} className="border border-accent"><a>Video</a></li>
+                <ul tabIndex="-1" className="dropdown-content menu bg-gray-700 rounded-box z-1 w-52 p-2 shadow-sm space-y-2">
+                    <li onClick={() => handleFilter(1)} className="hover:bg-gray-700"><a>Call</a></li>
+                    <li onClick={() => handleFilter(2)} className="hover:bg-gray-700"><a>Text</a></li>
+                    <li onClick={() => handleFilter(3)} className="hover:bg-gray-700"><a>Video</a></li>
                 </ul>
                 </div>
             </div>
-            <div className={`bg-gray-800 flex flex-col justify-center items-center gap-3 p-10 my-5 rounded-md md:rounded-2xl text-xl text-center md:text-4xl ${filterData.length == 0? '': 'hidden'}`}>
+            <div className={`bg-gray-700 flex flex-col justify-center items-center gap-3 p-10 my-5 rounded-md md:rounded-2xl text-xl text-center md:text-4xl ${filterData.length == 0? '': 'hidden'}`}>
                     <BiFileBlank className="lg:text-8xl" />
                     There are no information.
                 </div>

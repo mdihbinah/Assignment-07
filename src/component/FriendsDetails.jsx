@@ -20,40 +20,40 @@ const FriendsDetails = ({friend}) => {
         <div>
             <div className='w-[90%] mx-auto grid md:grid-cols-5 md:gap-5 space-y-5 my-10'>
             <div className="flex flex-col space-y-5 col-span-2">
-                <div className="border-2 border-accent p-3 flex flex-col justify-center items-center gap-2 rounded-xl">
+                <div className="bg-gray-700 p-5 flex flex-col justify-center items-center gap-2 rounded-lg">
                     <Image src={picture} alt='name' width='100' height='100' className='rounded-full' ></Image>
                                 <p className='text-xl font-bold'>{name}</p>
                                 <div className="flex gap-2">
                                     {
-                                        tags.map((ele, ind) => <p key={ind} className='bg-accent py-1 px-4 rounded-full'>{ele}</p>)
+                                        tags.map((ele, ind) => <p key={ind} className='border-2 border-accent text-accent px-4 rounded-full'>{ele}</p>)
                                     }
                                 </div>
-                                <p className={`${(status == 'overdue')? 'badge badge-primary': (status == 'on-track')? 'badge badge-info': 'badge badge-error'}`} >{status}</p>
+                                <p className={`p-2 text-white ${(status == 'overdue')? 'badge badge-primary': (status == 'on-track')? 'badge badge-info': 'badge badge-error'}`} >{status}</p>
                                 <p className='text-center text-sm'>{bio}</p>
                                 <p>{email}</p>
                 </div>
                 <div className="space-y-3">
-                    <div className="flex justify-center items-center gap-3 bg-gray-500 rounded-sm p-2"><RiNotificationSnoozeLine />Snooze 2 Weeks</div>
-                    <div className="flex justify-center items-center gap-3 bg-gray-500 rounded-sm p-2"><FiArchive />Archive</div>
-                    <div className="flex justify-center items-center gap-3 bg-gray-500 rounded-sm p-2"><AiOutlineDelete />Delete</div>
+                    <div className="flex justify-center items-center gap-3 bg-gray-700 rounded-sm p-2"><RiNotificationSnoozeLine />Snooze 2 Weeks</div>
+                    <div className="flex justify-center items-center gap-3 bg-gray-700 rounded-sm p-2"><FiArchive />Archive</div>
+                    <div className="flex justify-center items-center gap-3 bg-gray-700 rounded-sm p-2"><AiOutlineDelete />Delete</div>
                 </div>
             </div>
             <div className="col-span-3 grid md:grid-rows-3 gap-10">
                 <div className="grid md:grid-cols-3 gap-5">
-                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-500 rounded-xl">
+                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-700 rounded-lg">
                         <h3 className='text-3xl font-bold'>{days_since_contact}</h3>
                         <p>Days Since Contact</p>
                     </div>
-                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-500 rounded-xl">
+                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-700 rounded-lg">
                         <h3 className='text-3xl font-bold'>{goal}</h3>
                         <p>Goal (Days)</p>
                     </div>
-                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-500 rounded-xl">
-                        <h3 className='text-3xl font-bold'><DateC date={new Date(`${next_due_date}`)} ></DateC></h3>
+                    <div className="flex flex-col justify-center items-center p-3 gap-1 bg-gray-700 rounded-lg">
+                        <h3 className='text-2xl font-bold'><DateC date={new Date(`${next_due_date}`)} ></DateC></h3>
                         <p>Next Due</p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-around gap-3 rounded-lg bg-gray-500 p-3">
+                <div className="flex flex-col justify-around gap-3 rounded-lg bg-gray-700 p-5">
                     <div className="flex justify-between items-center">
                         <h2>Relationship Goal</h2>
                         <button className='btn'>Edit</button>
@@ -66,21 +66,21 @@ const FriendsDetails = ({friend}) => {
                         <div onClick={() => {
                             setUser([...user, [1,friend]])
                             toast.success(`Call with ${name}`)
-                            }} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                            }} className="flex flex-col items-center gap-2 bg-gray-700 p-5 rounded-sm">
                             <MdAddIcCall />
                             <p>Call</p>
                         </div>
                         <div onClick={() => {
                             setUser([...user, [2,friend]])
                             toast.success(`Text with ${name}`)
-                            }} className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                            }} className="flex flex-col items-center gap-2 bg-gray-700 p-5 rounded-sm">
                             <MdOutlineTextsms />
                             <p>Text</p>
                         </div>
                         <div onClick={() => {
                             setUser([...user, [3,friend]]) 
                             toast.success(`Video with ${name}`)}
-                            } className="flex flex-col items-center gap-2 bg-gray-500 p-5 rounded-sm">
+                            } className="flex flex-col items-center gap-2 bg-gray-700 p-5 rounded-sm">
                             <FaVideo />
                             <p>Video</p>
                         </div>
