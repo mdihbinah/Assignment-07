@@ -21,7 +21,7 @@
     "tags": ["school", "best friend"],
     "bio": "Childhood best friend. We grew up together and still share life updates and emotional support.",
     "goal": 14,
-    "next_due_date": "2026-04-18"
+    "next_due_date": "2026-01-18"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["office", "colleague"],
     "bio": "Work colleague in a remote dev team. We collaborate on React and Next.js projects frequently.",
     "goal": 10,
-    "next_due_date": "2026-04-20"
+    "next_due_date": "2026-03-20"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
     "tags": ["gym", "fitness buddy"],
     "bio": "Gym friend who motivates me to stay consistent with workouts and healthy routines.",
     "goal": 14,
-    "next_due_date": "2026-04-17"
+    "next_due_date": "2020-03-17"
   },
   {
     "id": 6,

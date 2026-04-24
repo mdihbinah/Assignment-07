@@ -4,6 +4,8 @@ import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 import UserProvider from "@/contextApi/UserContextProvider";
 import { ToastContainer } from "react-toastify";
+import { BannerContext } from "@/contextApi/UserContext";
+import BannerContextProvider from "@/contextApi/BannerContextProvider";
 
 
 const geistSans = Geist({
@@ -30,10 +32,12 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
         <main>
-          <UserProvider>
-            {children}
-            <ToastContainer />
-          </UserProvider>
+            <BannerContextProvider>
+              <UserProvider>
+                {children}
+                <ToastContainer />
+              </UserProvider>
+            </BannerContextProvider>
         </main>
         <Footer></Footer>
       </body>

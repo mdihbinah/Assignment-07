@@ -1,9 +1,11 @@
+import { FaChevronDown } from "react-icons/fa";
+import BannerStats from "./BannerStats";
 import Friend from "./Friend";
 
 const Friends = async () => {
     const res = await fetch("https://mdihbinah-assignment-07.vercel.app/friends.json", {cache: "no-store"});
     const friends = await res.json()
-    console.log(friends);
+    // console.log(friends);
     return (
         <div className="space-y-3 mb-5">
             <h2>Your Friends</h2>
@@ -12,6 +14,7 @@ const Friends = async () => {
                     friends.map(friend => <Friend key={friend.id} friend={friend}></Friend>)
                 }
             </div>
+            <BannerStats friends={friends}></BannerStats>
         </div>
     );
 };

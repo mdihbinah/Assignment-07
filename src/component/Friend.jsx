@@ -1,9 +1,13 @@
+'use client'
+import { BannerContext } from '@/contextApi/UserContext';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import { useContext } from 'react';
+
 
 const Friend = ({friend}) => {
     const {id,name,picture,days_since_contact,tags,status} = friend
+
     return (
         <Link href={`/${id}`} className='bg-gray-700 rounded-lg p-4 flex flex-col justify-center items-center gap-2'>
             <Image src={picture} alt='name' width='100' height='100' className='rounded-full' ></Image>
